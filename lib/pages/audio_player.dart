@@ -71,53 +71,118 @@ class _AudioPlayerPageState extends State<AudioPlayerPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
       appBar: AppBar(
         title: Text(widget.title),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          children: [
-            Text(
-              '${_formatDuration(_currentPosition)} / ${_formatDuration(_totalDuration)}',
-              style: const TextStyle(fontSize: 16),
-            ),
-            const SizedBox(height: 16),
-            Slider(
-              value: _currentPosition.inSeconds.toDouble(),
-              max: _totalDuration.inSeconds.toDouble(),
-              onChanged: (value) {
-                _audioPlayer.seek(Duration(seconds: value.toInt()));
-              },
-            ),
-            const SizedBox(height: 16),
-            IconButton(
-              iconSize: 64,
-              icon: Icon(
-                _audioPlayer.playing
-                    ? Icons.pause_circle_filled
-                    : Icons.play_circle_filled,
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [Colors.blue.shade900, Colors.blueAccent.shade400],
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+          ),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 24.0),
+          child: Column(
+            children: [
+              // Song Duration Display
+              Text(
+                '${_formatDuration(_currentPosition)} / ${_formatDuration(_totalDuration)}',
+                style: const TextStyle(
+                  fontSize: 16,
+                  color: Colors.white,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
-              onPressed: _togglePlayPause,
-            ),
-            const SizedBox(height: 32),
-            Expanded(
-              child: ListView.builder(
-                itemCount: widget.chapters.length,
-                itemBuilder: (context, index) {
-                  final chapter = widget.chapters[index];
-                  return ListTile(
-                    title: Text(chapter['title']),
-                    subtitle: Text(
-                      'Start: ${_formatDuration(chapter['start'])}, '
-                      'End: ${_formatDuration(chapter['end'])}',
-                    ),
-                    onTap: () => _playChapter(chapter['start']),
-                  );
-                },
+              const SizedBox(height: 16),
+
+              // Seek Bar
+              SliderTheme(
+                data: SliderThemeData(
+                  thumbColor: Colors.white,
+                  activeTrackColor: Colors.blueAccent,
+                  inactiveTrackColor: Colors.white38,
+                ),
+                child: Slider(
+                  value: _currentPosition.inSeconds.toDouble(),
+                  max: _totalDuration.inSeconds.toDouble(),
+                  onChanged: (value) {
+                    _audioPlayer.seek(Duration(seconds: value.toInt()));
+                  },
+                ),
               ),
-            ),
-          ],
+              const SizedBox(height: 24),
+
+              // Play/Pause Button
+              IconButton(
+                iconSize: 72,
+                icon: Icon(
+                  _audioPlayer.playing
+                      ? Icons.pause_circle_filled
+                      : Icons.play_circle_filled,
+                  color: Colors.white,
+                ),
+                onPressed: _togglePlayPause,
+              ),
+              const SizedBox(height: 32),
+
+              // Chapter List Header
+              Text(
+                'Chapters',
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+              const SizedBox(height: 16),
+
+              // Chapter List
+              Expanded(
+                child: ListView.builder(
+                  itemCount: widget.chapters.length,
+                  itemBuilder: (context, index) {
+                    final chapter = widget.chapters[index];
+                    return Card(
+                      margin: const EdgeInsets.symmetric(vertical: 8.0),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: ListTile(
+                        tileColor: Colors.white,
+                        contentPadding: const EdgeInsets.all(12),
+                        title: Text(
+                          chapter['title'],
+                          style: const TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.w600,
+                            color: Colors.black87,
+                          ),
+                        ),
+                        subtitle: Text(
+                          'Start: ${_formatDuration(chapter['start'])}, '
+                          'End: ${_formatDuration(chapter['end'])}',
+                          style: const TextStyle(
+                            fontSize: 14,
+                            color: Colors.black54,
+                          ),
+                        ),
+                        trailing: const Icon(
+                          Icons.play_arrow,
+                          color: Colors.blueAccent,
+                        ),
+                        onTap: () => _playChapter(chapter['start']),
+                      ),
+                    );
+                  },
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

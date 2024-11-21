@@ -1,6 +1,44 @@
 // lib/surah_list.dart
 
 const List<Map<String, dynamic>> surahList = [
+  //Surah Ar Rahman
+  {
+    "title": "Surah Ar Rahman",
+    "file": "assets/55_ar_rahman.mp3",
+    "chapters": [
+      {
+        "title": "ٱلرَّحْمَـٰنُ",
+        "start": Duration(seconds: 6),
+        "end": Duration(seconds: 10)
+      },
+      {
+        "title": "عَلَّمَ ٱلْقُرْءَانَ",
+        "start": Duration(seconds: 11),
+        "end": Duration(seconds: 15)
+      },
+      {
+        "title": "خَلَقَ ٱلْإِنسَـٰنَ",
+        "start": Duration(seconds: 16),
+        "end": Duration(seconds: 19)
+      },
+      {
+        "title": "عَلَّمَهُ ٱلْبَيَانَ",
+        "start": Duration(seconds: 21),
+        "end": Duration(seconds: 24)
+      },
+      {
+        "title": "ٱلشَّمْسُ وَٱلْقَمَرُ بِحُسْبَانٍۢ",
+        "start": Duration(seconds: 25),
+        "end": Duration(seconds: 31)
+      },
+      {
+        "title": "وَٱلنَّجْمُ وَٱلشَّجَرُ يَسْجُدَانِ",
+        "start": Duration(seconds: 32),
+        "end": Duration(seconds: 37)
+      },
+    ],
+  },
+  //Surah Quraish
   {
     "title": "Surah Quraish",
     "file": "assets/106_quraish.mp3",

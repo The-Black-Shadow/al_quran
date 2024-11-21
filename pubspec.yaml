@@ -61,6 +61,7 @@ flutter:
   assets:
     - assets/surah_maun.mp3
     - assets/106_quraish.mp3
+    - assets/55_ar_rahman.mp3
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

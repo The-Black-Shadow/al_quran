@@ -6,22 +6,22 @@ const List<Map<String, dynamic>> surahList = [
     "file": "assets/106_quraish.mp3",
     "chapters": [
       {
-        "title": "Ayat 01",
+        "title": "لِإِيلَـٰفِ قُرَيْشٍ ",
         "start": Duration(seconds: 7),
         "end": Duration(seconds: 11)
       },
       {
-        "title": "Ayat 2",
+        "title": "إِۦلَـٰفِهِمْ رِحْلَةَ ٱلشِّتَآءِ وَٱلصَّيْفِ ",
         "start": Duration(seconds: 12),
         "end": Duration(seconds: 20)
       },
       {
-        "title": "Ayat 3",
+        "title": "فَلْيَعْبُدُوا۟ رَبَّ هَـٰذَا ٱلْبَيْتِ",
         "start": Duration(seconds: 21),
         "end": Duration(seconds: 27)
       },
       {
-        "title": "Ayat 4",
+        "title": "ٱلَّذِىٓ أَطْعَمَهُم مِّن جُوعٍۢ وَءَامَنَهُم مِّنْ خَوْفٍۭ",
         "start": Duration(seconds: 28),
         "end": Duration(seconds: 42)
       },
@@ -32,14 +32,39 @@ const List<Map<String, dynamic>> surahList = [
     "file": "assets/surah_maun.mp3",
     "chapters": [
       {
-        "title": "Chapter 1",
-        "start": Duration(seconds: 0),
-        "end": Duration(seconds: 30)
+        "title": "أَرَءَيْتَ ٱلَّذِى يُكَذِّبُ بِٱلدِّينِ",
+        "start": Duration(seconds: 7),
+        "end": Duration(seconds: 12)
       },
       {
-        "title": "Chapter 2",
-        "start": Duration(seconds: 30),
-        "end": Duration(seconds: 60)
+        "title": "فَذَٰلِكَ ٱلَّذِى يَدُعُّ ٱلْيَتِيمَ",
+        "start": Duration(seconds: 13),
+        "end": Duration(seconds: 19)
+      },
+      {
+        "title": "وَلَا يَحُضُّ عَلَىٰ طَعَامِ ٱلْمِسْكِينِ",
+        "start": Duration(seconds: 20),
+        "end": Duration(seconds: 27)
+      },
+      {
+        "title": "فَوَيْلٌۭ لِّلْمُصَلِّينَ",
+        "start": Duration(seconds: 20),
+        "end": Duration(seconds: 33)
+      },
+      {
+        "title": "ٱلَّذِينَ هُمْ عَن صَلَاتِهِمْ سَاهُونَ",
+        "start": Duration(seconds: 34),
+        "end": Duration(seconds: 41)
+      },
+      {
+        "title": "ٱلَّذِينَ هُمْ يُرَآءُونَ",
+        "start": Duration(seconds: 42),
+        "end": Duration(seconds: 49)
+      },
+      {
+        "title": "وَيَمْنَعُونَ ٱلْمَاعُونَ",
+        "start": Duration(seconds: 50),
+        "end": Duration(seconds: 57)
       },
     ],
   },

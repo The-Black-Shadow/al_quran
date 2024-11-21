@@ -183,6 +183,8 @@ class _AudioPlayerPageState extends State<AudioPlayerPage> {
                             child: ListTile(
                               tileColor: Colors.white,
                               contentPadding: const EdgeInsets.all(12),
+                              leading: Text(
+                                '${index + 1}',),
                               title: Text(
                                 chapter['title'],
                                 style: const TextStyle(

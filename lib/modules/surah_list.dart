@@ -36,6 +36,82 @@ const List<Map<String, dynamic>> surahList = [
         "start": Duration(seconds: 32),
         "end": Duration(seconds: 37)
       },
+      {
+        "title": "وَٱلسَّمَآءَ رَفَعَهَا وَوَضَعَ ٱلْمِيزَانَ",
+        "start": Duration(seconds: 38),
+        "end": Duration(seconds: 45)
+      },
+      {
+        "title": "أَلَّا تَطْغَوْا۟ فِى ٱلْمِيزَانِ",
+        "start": Duration(seconds: 46),
+        "end": Duration(seconds: 51)
+      },
+      {
+        "title":
+            "وَأَقِيمُوا۟ ٱلْوَزْنَ بِٱلْقِسْطِ وَلَا تُخْسِرُوا۟ ٱلْمِيزَانَ",
+        "start": Duration(seconds: 52),
+        "end": Duration(seconds: 59)
+      },
+      {
+        "title": "وَٱلْأَرْضَ وَضَعَهَا لِلْأَنَامِ",
+        "start": Duration(seconds: 60),
+        "end": Duration(seconds: 65)
+      },
+      {
+        "title": "فِيهَا فَـٰكِهَةٌۭ وَٱلنَّخْلُ ذَاتُ ٱلْأَكْمَامِ",
+        "start": Duration(seconds: 66),
+        "end": Duration(seconds: 74)
+      },
+      {
+        "title": "وَٱلْحَبُّ ذُو ٱلْعَصْفِ وَٱلرَّيْحَانُ",
+        "start": Duration(seconds: 75),
+        "end": Duration(seconds: 81)
+      },
+      {
+        "title": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "start": Duration(seconds: 82),
+        "end": Duration(seconds: 90)
+      },
+      {
+        "title": "خَلَقَ ٱلْإِنسَـٰنَ مِن صَلْصَـٰلٍۢ كَٱلْفَخَّارِ",
+        "start": Duration(seconds: 91),
+        "end": Duration(seconds: 101)
+      },
+      {
+        "title": "وَخَلَقَ ٱلْجَآنَّ مِن مَّارِجٍۢ مِّن نَّارٍۢ",
+        "start": Duration(seconds: 102),
+        "end": Duration(seconds: 112)
+      },
+      {
+        "title": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "start": Duration(seconds: 113),
+        "end": Duration(seconds: 121)
+      },
+      {
+        "title": "رَبُّ ٱلْمَشْرِقَيْنِ وَرَبُّ ٱلْمَغْرِبَيْنِ",
+        "start": Duration(seconds: 122),
+        "end": Duration(seconds: 128)
+      },
+      {
+        "title": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "start": Duration(seconds: 128),
+        "end": Duration(seconds: 136)
+      },
+      {
+        "title": "مَرَجَ ٱلْبَحْرَيْنِ يَلْتَقِيَانِ",
+        "start": Duration(seconds: 137),
+        "end": Duration(seconds: 141)
+      },
+      {
+        "title": "بَيْنَهُمَا بَرْزَخٌۭ لَّا يَبْغِيَانِ",
+        "start": Duration(seconds: 142),
+        "end": Duration(seconds: 148)
+      },
+      {
+        "title": "فَبِأَىِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "start": Duration(seconds: 148),
+        "end": Duration(seconds: 157)
+      },
     ],
   },
   //Surah Quraish
